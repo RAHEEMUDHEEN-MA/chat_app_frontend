@@ -1,0 +1,108 @@
+.chat_list {
+  height: 100%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  background-color: #d8dcff98;
+  overflow: hidden;
+  margin: 0px 5px;
+}
+
+.chat_list_head {
+  padding: 15px;
+  display: none;
+  background-color: #dad3ff;
+  /* background-color: #6a658283; */
+  color: rgb(104, 101, 101);
+  text-align: left;
+  padding-left: 70px;
+  text-decoration: none;
+}
+
+.chat_list_container {
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;
+  scrollbar-face-color: transparent;
+  padding: 10px 1px;
+}
+
+.chat_list_container::-webkit-scrollbar {
+  width: 1px;
+}
+
+.chatListItem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.481);
+}
+
+.chatListItem:hover {
+  background-color: rgba(182, 166, 253, 0.76);
+}
+.chatListItem:hover .listItemDp {
+  background-color: rgba(255, 255, 255, 0.905);
+}
+.chatlistItemDP{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  max-width: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+}
+.listItemDp {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(164, 167, 244);
+  /* padding: 12px; */
+  border-radius: 50%;
+  color: rgb(99, 81, 239);
+}
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .chat_list {
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .chat_list{
+      width: 100%;
+      height: 100vh;
+      padding-top: 4vh;
+      /* background-color: rgb(222, 21, 21); */
+      /* display: none; */
+
+
+  }
+  .chat_list{
+    margin: 0;
+  }
+  .chat_list_head{
+    display: none;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    margin-bottom: 17px;
+
+  }
+  .chat_list_head h3{
+    font-size: 1px;
+    margin: -10px;
+  }
+}

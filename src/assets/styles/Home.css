@@ -1,0 +1,44 @@
+.TopBar{
+ display: none;
+  
+}
+.TopBar button{
+  border: none;
+  background-color: transparent;
+ 
+  color: gray;
+  padding: 4px 5px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.TopBar button:hover{
+  background-color: rgb(199, 201, 243);
+  color: white;
+}
+.TopBar p{
+  color: rgba(128, 128, 128, 0.663);
+}
+
+.TopBar h2{
+  color: rgb(111, 105, 105);
+}
+
+
+@media only screen and (max-width: 500px) {
+  .TopBar{
+    display: flex;
+      position: absolute;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+      width: 100%;
+      border-radius: 0;
+      top: 0px;
+      padding:  0px 35px ;
+      background-color: hsl(0, 0%, 100%);
+      color: rgb(86, 82, 82);
+      border-radius:  0px 0px 10px 10px;
+  }
+  
+}

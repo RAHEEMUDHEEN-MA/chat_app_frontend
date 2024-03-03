@@ -1,0 +1,61 @@
+.friendRequest_main {
+  background-color: rgba(0, 47, 255, 0.093);
+  height: 100vh;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+.friendRequest_main h1 {
+  color: rgb(130, 130, 132);
+}
+
+.requests {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  min-width: 500px;
+  border-radius: 15px;
+  /* color: white; */
+  gap: 20px;
+  box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.396);
+}
+
+.reqdp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(207, 136, 54, 0.812);
+  /* padding: 10px; */
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+
+.textbox {
+}
+
+.btns_holder {
+  display: flex;
+  gap: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .friendRequest_main{
+    min-width: 400px;
+    width: 100%;
+    margin-top: 10vh;
+  }
+  .requests{
+    padding: 10px;
+    gap: 10px;
+  }
+}
