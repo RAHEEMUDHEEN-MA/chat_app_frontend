@@ -6,7 +6,7 @@ import { GiMushroomHouse } from "react-icons/gi";
 
 const JoinRandomChat = ({ userdata, socket }) => {
   const name=userdata.name
-  // const [name,setanme] = useState("tester")
+  
   const [room, setRoom] = useState();
 
 
